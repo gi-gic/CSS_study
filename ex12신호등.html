@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #black{
+            background-color: black;
+            margin-top: 10px;
+            width: 120px;
+            height: 360px;
+            border-radius: 30px;
+            
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .circle{
+            /* margin 중첩 현상
+            - 마진을 같은 영역이 여러번 줘도 누적X
+            - 중첩되어서 사라짐
+            */
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            margin-top: 10px;
+        }
+        #red{
+            background-color: red;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        #green{
+            background-color: green;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="black">
+        <div class="circle" id="red"> </div>
+        <div class="circle" id="yellow"> </div>
+        <div class="circle" id="green"> </div>
+    </div>
+</body>
+</html>
